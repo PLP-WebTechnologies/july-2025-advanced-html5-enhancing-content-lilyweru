@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Assignment: Lists, Tables, Media, and Forms">
+    <title>HTML5 Enhanced Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 6px 0 3px;
+        }
+        input, select, textarea {
+            padding: 8px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: auto;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>HTML5 Enhanced Content & Form</h1>
+    <p>This page demonstrates lists, tables, media embedding, and a complete HTML5 form with native validation.</p>
+</header>
+
+<main>
+    <section>
+        <h2>1. Popular Web Development Tools</h2>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Sublime Text</li>
+            <li>Atom Editor</li>
+        </ul>
+
+        <h3>Frontend Skills</h3>
+        <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>2. Programming Language Popularity (2025)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Ranking</th>
+                    <th>Primary Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>1</td>
+                    <td>Data Science, Web Development</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>2</td>
+                    <td>Web Applications</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>3</td>
+                    <td>Enterprise Applications</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Embedded Media</h2>
+        <figure>
+            <img src="https://via.placeholder.com/600x300" alt="Sample image" width="100%">
+            <figcaption>A placeholder image representing a coding workspace.</figcaption>
+        </figure>
+
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="100%" controls>
+            <source src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section>
+        <h2>4. Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select Country --</option>
+                    <option value="ke">Kenya</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="about">Tell us about yourself:</label>
+                <textarea id="about" name="about" rows="4" placeholder="Write something here..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Assignment by Lilian Weru</p>
+</footer>
+</body>
+</html>
